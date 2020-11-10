@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1{
+            display: flex;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* flex-direction: column; */
+        }
+        .container-1 div,.container-2 div{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .box-1{
+            flex:2;
+            order:2;
+        }
+        .box-2{
+            flex:1;
+            order:1;
+        }
+        .box-3{
+            flex:1;
+            order:3
+        }
+        .container-2{
+            display: flex;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+        }
+        .container-2-box{
+            flex-basis: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Box one</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus purus, gravida id feugiat et, placerat sit amet tortor.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus purus, gravida id feugiat et, placerat sit amet tortor.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus purus, gravida id feugiat et, placerat sit amet tortor.</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus purus, gravida id feugiat et, placerat sit amet tortor.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Five</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus purus, gravida id feugiat et, placerat sit amet tortor.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus purus, gravida id feugiat et, placerat sit amet tortor.</p>
+        </div>
+    </div>
+</body>
+</html>
